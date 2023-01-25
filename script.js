@@ -1,66 +1,5 @@
 
 
-$('.btn_nav').click(function() {
-  // animate content
-  $('.page__style').addClass('animate_content');
-  $('.page__description').fadeOut(100).delay(2800).fadeIn();
-
-  setTimeout(function() {
-    $('.page__style').removeClass('animate_content');
-  }, 3200);
-
-  //remove fadeIn class after 1500ms
-  setTimeout(function() {
-    $('.page__style').removeClass('fadeIn');
-  }, 1500);
-
-});
-
-// on click show page after 1500ms
-$('.paso1').click(function() {
-  setTimeout(function() {
-    $('.home').addClass('fadeIn');
-  }, 1500);
-});
-
-$('.paso2').click(function() {
-  setTimeout(function() {
-    $('.projects').addClass('fadeIn');
-  }, 1500);
-});
-
-$('.paso3').click(function() {
-  setTimeout(function() {
-    $('.skills').addClass('fadeIn');
-  }, 1500);
-});
-
-$('.paso4').click(function() {
-  setTimeout(function() {
-    $('.about').addClass('fadeIn');
-  }, 1500);
-});
-
-$('.paso5').click(function() {
-  setTimeout(function() {
-    $('.contact').addClass('fadeIn');
-  }, 1500);
-});
-
-$('.paso6').click(function() {
-  setTimeout(function() {
-    $('.projects2').addClass('fadeIn');
-  }, 1500);
-});
-
-$('.final').click(function() {
-  setTimeout(function() {
-    $('.skills2').addClass('fadeIn');
-  }, 1500);
-});
-
-
-
 
 
 function makeResizable(element){
@@ -102,3 +41,34 @@ jQuery(window).resize(function() {
 });
 
 
+var track = document.getElementById('track');
+
+var controlBtn = document.getElementById('play-pause');
+var controlBtnicon = document.getElementById('iconrep');
+
+function playPause() {
+    if (track.paused) {
+        track.play();
+        //controlBtn.textContent = "Pause";
+        controlBtnicon.className = "fa-regular fa-circle-pause";
+    } else { 
+        track.pause();
+         //controlBtn.textContent = "Play";
+         controlBtnicon.className = "fa-regular fa-circle-play";
+    }
+}
+
+controlBtn.addEventListener("click", playPause);
+track.addEventListener("ended", function() {
+  controlBtn.className = "play";
+});
+
+function  Show1(){
+  var mostrar = document.getElementById('play-pause2');
+  var esconder = document.getElementById('play-pause');
+  var esconder2 = document.getElementById('iconrep');
+
+  mostrar.className = "modOperativo";
+  esconder.className = "hide";
+  esconder2.className = "hide";
+}
