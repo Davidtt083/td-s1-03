@@ -22,7 +22,7 @@
   <div class="contenedor3">
     <div class="headerConte">
       <h1>Caso 3</h1>
-      <p>Integración del Canvas partiendo de los clientes potenciales o existentes: Canvas de modelo de negocio de Café Valdez</p>
+      <p>Integración del Canvas partiendo de los recursos: modelo de negocio de Juan Valdez</p>
     </div>
     <div class="childCanvas">
       <div class="modCanvas socClave">
@@ -64,26 +64,64 @@
     <a class="close" href="home.html"><span class="regresar"><i class="fa-regular fa-circle-left"></i></span></a>
   </div>
 
-  <div class="propValorrec" id="play-pause">
+  <div class="hide" id="play-pause"> <!--propValorrec-->
     <div class="reproductor"><i id="iconrep" class="fa-regular fa-circle-play"></i></div>
   </div>
 
-  <div class="modOperativo" id="play-pause2">
-    <div class="reproductor"><i id="iconrep" class="fa-regular fa-circle-play"></i></div>
+  <div class="hide" id="play-pause2"><!--modOperativo-->
+    <div class="reproductor"><i id="iconrep2" class="fa-regular fa-circle-play"></i></div>
   </div>
 
-  <div class="modExp" id="play-pause2">
-    <div class="reproductor"><i id="iconrep" class="fa-regular fa-circle-play"></i></div>
+  <div class="hide" id="play-pause3"><!--modExp-->
+    <div class="reproductor"><i id="iconrep3" class="fa-regular fa-circle-play"></i></div>
   </div>
 
-  <div class="modFinan" id="play-pause2">
-    <div class="reproductor"><i id="iconrep" class="fa-regular fa-circle-play"></i></div>
+  <div class="hide" id="play-pause4"><!--modFinan-->
+    <div class="reproductor"><i id="iconrep4" class="fa-regular fa-circle-play"></i></div>
+  </div>
+  <div class="conexto" id="contexto1">
+    <p id="text1">Contexto <i id="iconrepContext" class="fa-regular fa-circle-play"></i></p>
   </div>
 
+  <div id="popup" class="hide">
+    <div class="popup">
+      <a class="close" href="#" onclick="document.location.reload(true)"><span class="equis"><i
+            class="fa-regular fa-circle-xmark"></i></span></a>
+      <div class="content">
+        <!--<div class="btnplay2" id="btnplay2"><i id="iconrepfin" class="fa-regular fa-circle-play"></i></div>-->
+        <h1>Juan Valdez</h1>
+        Como pudiste ver, Juan Valdez tiene un Canvas de modelo de negocio que inicia desde la producción y los recursos
+        clave.
+      </div>
+      <img src="images\Juan-valdez.png" alt="" class="logo">
+
+    </div>
+
+  </div>
 
   <!---------Audios--------->
-  <audio id="track" onended="Show1()">
-    <source src="audio\magic-mallet-6262.mp3" type="audio/mpeg" />
+  <audio id="track1" onended="Show1()">
+    <source src="../audio/Track_11.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="track2" onended="Show2()">
+    <source src="../audio/Track_13.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="track3" onended="Show3()">
+    <source src="../audio/Track_12.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="track4" onended="Show4()">
+    <source src="../audio/Track_14.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="track5" onended="Show5()">
+    <source src="../audio/Track_15.mp3" type="audio/mpeg" /><!--../audio/Track_3.mp3-->
+  </audio>
+
+  <audio id="track6" onended="Show6()">
+    <source src="audio\Track_16.mp3" type="audio/mpeg" />
   </audio>
   <!---------Audios--------->
 

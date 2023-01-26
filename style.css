@@ -38,8 +38,8 @@
   right: 0;
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
-  visibility: hidden;
-  opacity: 0;
+  visibility: visible;
+  opacity: 1;
 }
 
 .overlay:target {
@@ -52,7 +52,6 @@ a {
 }
 
 .popup {
-
   padding: 20px;
   background: #fff;
   border-radius: 5px;
@@ -90,6 +89,32 @@ a {
   margin-top: -476px;
   margin-left: -17px;
   opacity: 0.5;
+}
+
+.conexto {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  color: #ffffff;
+  width: 171px;
+  height: 34px;
+  font-size: 20px;
+  justify-content: center;
+  border: solid #ffffff 1px;
+  border-radius: 20px;
+  margin-top: -582px;
+  margin-left: 103px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.conexto:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.conexto p {
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
 }
 
 .G2 {
@@ -191,6 +216,15 @@ a {
   color: #ffffff;
   margin-right: 5%;
   text-align: right;
+}
+
+.headerConte p {
+  margin-left: 40%;
+  font-size: 18px;
+  width: 60%;
+  text-align: justify;
+  line-height: 18px;
+  margin-top: -12px;
 }
 
 .childCanvas {
@@ -368,4 +402,44 @@ a {
 
 .hide {
   display: none;
+}
+
+.logo {
+  width: 19%;
+  margin-left: 38%;
+  margin-top: 10px;
+}
+
+.btnplay2{
+  position: absolute;
+  background-color: rgba(0, 0, 0, 1);
+  color: #ffffff;
+  width: 35px;
+  height: 35px;
+  font-size: 20px;
+  justify-content: center;
+  border: solid #ffffff 1px;
+  border-radius: 50%;
+  margin-top: 2px;
+  margin-left: 75px;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+.btnplay2 i{
+  margin-left: 6px;
+  margin-top: 7px;
+}
+
+.equis {
+  position: absolute;
+  font-size: 40px;
+  margin-top: -43px;
+  margin-left: 635px;
+  background-color: red;
+  color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding-left: 10px;
 }

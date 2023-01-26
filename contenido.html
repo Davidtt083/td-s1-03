@@ -64,26 +64,63 @@
     <a class="close" href="home.html"><span class="regresar"><i class="fa-regular fa-circle-left"></i></span></a>
   </div>
 
-  <div class="propValorrec" id="play-pause">
+  <div class="hide" id="play-pause"> <!--propValorrec-->
     <div class="reproductor"><i id="iconrep" class="fa-regular fa-circle-play"></i></div>
   </div>
 
-  <div class="modOperativo" id="play-pause2">
-    <div class="reproductor"><i id="iconrep" class="fa-regular fa-circle-play"></i></div>
+  <div class="hide" id="play-pause2"><!--modOperativo-->
+    <div class="reproductor"><i id="iconrep2" class="fa-regular fa-circle-play"></i></div>
   </div>
 
-  <div class="modExp" id="play-pause2">
-    <div class="reproductor"><i id="iconrep" class="fa-regular fa-circle-play"></i></div>
+  <div class="hide" id="play-pause3"><!--modExp-->
+    <div class="reproductor"><i id="iconrep3" class="fa-regular fa-circle-play"></i></div>
   </div>
 
-  <div class="modFinan" id="play-pause2">
-    <div class="reproductor"><i id="iconrep" class="fa-regular fa-circle-play"></i></div>
+  <div class="hide" id="play-pause4"><!--modFinan-->
+    <div class="reproductor"><i id="iconrep4" class="fa-regular fa-circle-play"></i></div>
+  </div>
+  <div class="conexto" id="contexto1">
+    <p id="text1">Contexto <i id="iconrepContext" class="fa-regular fa-circle-play"></i></p>
   </div>
 
+  <div id="popup" class="hide">
+    <div class="popup">
+      <a class="close" href="#" onclick="document.location.reload(true)"><span class="equis"><i class="fa-regular fa-circle-xmark"></i></span></a>
+      <div class="content">
+        <!--<div class="btnplay2" id="btnplay2"><i id="iconrepfin" class="fa-regular fa-circle-play"></i></div>-->
+        <h1>Lizit</h1>
+        Como pudiste notar, Lizit es una empresa que tiene un Canvas de modelo de negocio que inicia desde la propuesta
+        de valor para un segmento de clientes específicos.
+      </div>
+      <img src="images\lizit.jfif" alt="" class="logo">
+      
+    </div>
+    
+  </div>
 
   <!---------Audios--------->
-  <audio id="track" onended="Show1()">
-    <source src="audio\magic-mallet-6262.mp3" type="audio/mpeg" />
+  <audio id="track1" onended="Show1()">
+    <source src="../audio/Track_0.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="track2" onended="Show2()">
+    <source src="../audio/Track_0_01.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="track3" onended="Show3()">
+    <source src="../audio/Track_1.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="track4" onended="Show4()">
+    <source src="../audio/Track_2.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="track5" onended="Show5()">
+    <source src="../audio/Track_3.mp3" type="audio/mpeg" /><!--../audio/Track_3.mp3-->
+  </audio>
+
+  <audio id="track6" onended="Show6()">
+    <source src="audio\Track_4.mp3" type="audio/mpeg" />
   </audio>
   <!---------Audios--------->
 
